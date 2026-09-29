@@ -53,6 +53,7 @@ AI 辅助编码最常见的三种失控：
 ```
 skills/
   vibe-coding-workflow/SKILL.md   # 元技能（编排层）
+  enterprise-agent-scaffolding/    # 企业级 agent 生产脚手架（S-前置，管多租户/审计/成本熔断/HITL）
   ask-matt/                        # 第三方（Matt Pocock，MIT）
   setup-matt-pocock-skills/        # 第三方（Matt Pocock，MIT）
 experts/
@@ -88,6 +89,21 @@ bash install.sh
 3. 使用时调用元技能 `vibe-coding-workflow`，或按阶段召唤：承宇 / 守拙 / 磐石 / 明镜。
 
 > 若目标已存在同名 `marketplace.json`，脚本会先备份为 `.bak` 再覆盖。
+
+## 企业级 agent 扩展（enterprise-agent-scaffolding）
+
+本职 `vibe-coding-workflow` 管的是**写代码**（agent loop、工具 schema、编排、状态机）。当你要交付的是**企业级 agent**（生产环境、多租户、有合规与成本约束），光跑通 S0-S6 不够——还差一层**生产脚手架**。
+
+`enterprise-agent-scaffolding` 与本职权**串行互补**，作为 S0 之前的 S-前置：
+
+- 多租户隔离 / IAM / OAuth-SSO
+- 不可篡改审计日志 + 可观测（tracing / metrics / 每步留痕）
+- 成本控制 / 熔断 / 步数与超时硬上限（防 agent 失控循环）
+- HITL 审批流 / 不可逆动作拦截
+- 行为评测集（对抗 / 越权 / 注入场景，不止功能单测）
+- 上线前架构审查清单（Katory ARB + Artefact non-negotiables）
+
+详见该技能 `SKILL.md` 与 `references/checklist.md`、`references/scaffold.ts`（最小可运行骨架）。
 
 ## 版权
 
