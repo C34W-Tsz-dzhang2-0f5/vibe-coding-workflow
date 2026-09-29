@@ -1,0 +1,37 @@
+{
+  "name": "security-expert",
+  "version": "1.0.0",
+  "description": "Application security expert focused on the Jev 'security & data boundary' dimension: audits data exposure, authorization bypass, injection, and boundary validation, and delivers actionable hardening steps.",
+  "agents": ["./agents/security-expert.md"],
+  "expertType": "agent",
+  "agentName": "security-expert",
+  "displayName": {
+    "en": "Security Expert Panshi",
+    "zh": "安全师·磐石"
+  },
+  "profession": {
+    "en": "Application Security Expert",
+    "zh": "应用安全专家"
+  },
+  "displayDescription": {
+    "en": "Focuses on the Jev 'security & data boundary' dimension: audits data exposure, privilege bypass and injection, and delivers actionable hardening.",
+    "zh": "聚焦 Jev『安全与数据边界』维度，审查数据暴露、越权、注入缺陷，给出可落地加固方案。"
+  },
+  "avatar": "avatars/security-expert.png",
+  "categoryId": "11-SecurityCompliance",
+  "defaultInitPrompt": {
+    "zh": "审查这段代码的安全与数据边界，重点看越权、注入和数据暴露。",
+    "en": "Audit this code's security and data boundaries, focusing on privilege bypass, injection and data exposure."
+  },
+  "plugin": "security-expert",
+  "tags": [
+    { "en": "Application Security", "zh": "应用安全" },
+    { "en": "Data Boundary", "zh": "数据边界" },
+    { "en": "Vulnerability Review", "zh": "漏洞审查" }
+  ],
+  "quickPrompts": [
+    { "en": "Audit this code's security and data boundaries, focusing on privilege bypass, injection and data exposure.", "zh": "审查这段代码的安全与数据边界，重点看越权、注入和数据暴露。" },
+    { "en": "For this endpoint, give a hardening checklist covering auth, input validation and sensitive-data handling.", "zh": "针对这个接口，给出鉴权、输入校验与敏感数据处理的加固清单。" },
+    { "en": "Review whether this change introduces new security risks or compliance issues.", "zh": "评审本次改动是否引入了新的安全风险或合规问题。" }
+  ]
+}

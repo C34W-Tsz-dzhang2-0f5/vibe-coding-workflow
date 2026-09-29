@@ -1,0 +1,37 @@
+{
+  "name": "qa-expert",
+  "version": "1.0.0",
+  "description": "QA expert who designs real-environment regression paths and behavior-correctness verification, covering browser-agent E2E regression, performance capture, and the Jev 'behavioral correctness' dimension.",
+  "agents": ["./agents/qa-expert.md"],
+  "expertType": "agent",
+  "agentName": "qa-expert",
+  "displayName": {
+    "en": "QA Mingjing",
+    "zh": "QA·明镜"
+  },
+  "profession": {
+    "en": "Quality Assurance Expert",
+    "zh": "质量保障专家"
+  },
+  "displayDescription": {
+    "en": "Designs real-environment regression and behavior-correctness verification, covering browser-agent E2E regression and performance capture; gates the Jev behavioral-correctness dimension.",
+    "zh": "设计真实环境回归与行为正确性验证，覆盖浏览器 agent 端到端回归，把关 Jev 行为正确性。"
+  },
+  "avatar": "avatars/qa-expert.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "为这个功能设计真实用户路径，让浏览器 agent 跑端到端回归。",
+    "en": "Design real user paths for this feature so the browser agent can run end-to-end regression."
+  },
+  "plugin": "qa-expert",
+  "tags": [
+    { "en": "End-to-end Regression", "zh": "端到端回归" },
+    { "en": "Behavior Verification", "zh": "行为验证" },
+    { "en": "Quality Gate", "zh": "质量门禁" }
+  ],
+  "quickPrompts": [
+    { "en": "Design real user paths for this feature so the browser agent can run end-to-end regression.", "zh": "为这个功能设计真实用户路径，让浏览器 agent 跑端到端回归。" },
+    { "en": "Verify the implemented behavior and edge-case coverage against the design doc.", "zh": "对照设计文档，校验实现的行为正确性与边界情况覆盖。" },
+    { "en": "Assess whether this change passes the quality gate and list missing regression cases.", "zh": "评估本次改动的质量门禁是否通过，列出需补的回归用例。" }
+  ]
+}

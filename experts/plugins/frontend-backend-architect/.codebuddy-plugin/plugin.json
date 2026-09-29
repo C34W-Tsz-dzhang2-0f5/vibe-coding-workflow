@@ -1,0 +1,37 @@
+{
+  "name": "frontend-backend-architect",
+  "version": "1.0.0",
+  "description": "Defines full-stack R&D infrastructure: monorepo layout, global unique schema, frontend/backend templates, reusable skills, and quality gates so AI agents code with complete organizational context.",
+  "agents": ["./agents/frontend-backend-architect.md"],
+  "expertType": "agent",
+  "agentName": "frontend-backend-architect",
+  "displayName": {
+    "en": "Architect Chengyu",
+    "zh": "架构师·承宇"
+  },
+  "profession": {
+    "en": "Full-stack Architect",
+    "zh": "全栈架构师"
+  },
+  "displayDescription": {
+    "en": "Defines monorepo, global schema, and frontend/backend templates, reusable skills and quality gates so AI coding has complete context.",
+    "zh": "定义全栈仓库与全局 schema、前后端模板与可复用技能，确保 AI 编码拥有完整组织上下文。"
+  },
+  "avatar": "avatars/frontend-backend-architect.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "帮我规划 monorepo 下前后端模块的拆分与全局 schema 派生方案。",
+    "en": "Help me plan the monorepo module split and global schema derivation for frontend and backend."
+  },
+  "plugin": "frontend-backend-architect",
+  "tags": [
+    { "en": "Architecture Design", "zh": "架构设计" },
+    { "en": "R&D Infrastructure", "zh": "研发基础设施" },
+    { "en": "Full-stack Engineering", "zh": "全栈工程化" }
+  ],
+  "quickPrompts": [
+    { "en": "Plan the monorepo module split and global schema derivation for frontend and backend.", "zh": "帮我规划 monorepo 下前后端模块的拆分与全局 schema 派生方案。" },
+    { "en": "Define the frontend/backend infra (templates, reusable skills, quality gates) for this new feature.", "zh": "为这个新功能定义前后端 infra：模板、可复用 skill、质量门禁。" },
+    { "en": "Review whether the current repo's module split and separation of concerns are sound.", "zh": "评审当前仓库的模块拆分与关注点分离是否合理。" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "maintainability-reviewer",
+  "version": "1.0.0",
+  "description": "Audits code against the design doc's maintainability discipline (separation of concerns, single source of truth, file organization, PR granularity) and flags agent-loop concept leakage.",
+  "agents": ["./agents/maintainability-reviewer.md"],
+  "expertType": "agent",
+  "agentName": "maintainability-reviewer",
+  "displayName": {
+    "en": "Reviewer Shouzhuo",
+    "zh": "评审师·守拙"
+  },
+  "profession": {
+    "en": "Code Maintainability Reviewer",
+    "zh": "代码可维护性评审专家"
+  },
+  "displayDescription": {
+    "en": "Audits code maintainability against the design doc: separation of concerns, single source of truth, file organization and PR granularity; flags agent-loop leakage.",
+    "zh": "按设计文档审查代码可维护性，查关注点分离、真相源唯一与 PR 粒度，揪出 loop 概念泄漏。"
+  },
+  "avatar": "avatars/maintainability-reviewer.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "按设计文档的可维护性要求，审查这份 PR 的关注点分离与真相源唯一性。",
+    "en": "Review this PR's separation of concerns and single-source-of-truth against the design doc."
+  },
+  "plugin": "maintainability-reviewer",
+  "tags": [
+    { "en": "Maintainability", "zh": "可维护性" },
+    { "en": "Code Review", "zh": "代码评审" },
+    { "en": "Architecture Compliance", "zh": "架构合规" }
+  ],
+  "quickPrompts": [
+    { "en": "Review this PR's separation of concerns and single-source-of-truth against the design doc.", "zh": "按设计文档的可维护性要求，审查这份 PR 的关注点分离与真相源唯一性。" },
+    { "en": "Check whether the code leaks agent-loop concepts (e.g. 'iterated N versions', 'split into N stages') into the delivered code.", "zh": "检查代码里有没有把 agent loop 过程概念（如『迭代了几版』『分了几阶段』）泄漏进交付。" },
+    { "en": "Evaluate whether the file organization and PR granularity of this change are reasonable.", "zh": "评估这个改动的文件组织与 PR 粒度是否合理。" }
+  ]
+}

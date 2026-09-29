@@ -1,0 +1,26 @@
+{
+  "name": "vibe-coding-experts",
+  "description": "Experts for the vibe-coding-workflow: architecture, maintainability, security, QA",
+  "plugins": [
+    {
+      "name": "frontend-backend-architect",
+      "source": "./plugins/frontend-backend-architect",
+      "description": "Defines full-stack R&D infrastructure: monorepo layout, global unique schema, frontend/backend templates, reusable skills, and quality gates so AI agents code with complete organizational context."
+    },
+    {
+      "name": "maintainability-reviewer",
+      "source": "./plugins/maintainability-reviewer",
+      "description": "Audits code against the design doc's maintainability discipline (separation of concerns, single source of truth, file organization, PR granularity) and flags agent-loop concept leakage."
+    },
+    {
+      "name": "security-expert",
+      "source": "./plugins/security-expert",
+      "description": "Application security expert focused on the Jev 'security & data boundary' dimension: audits data exposure, authorization bypass, injection, and boundary validation, and delivers actionable hardening steps."
+    },
+    {
+      "name": "qa-expert",
+      "source": "./plugins/qa-expert",
+      "description": "QA expert who designs real-environment regression paths and behavior-correctness verification, covering browser-agent E2E regression, performance capture, and the Jev 'behavioral correctness' dimension."
+    }
+  ]
+}
